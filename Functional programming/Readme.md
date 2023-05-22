@@ -24,7 +24,7 @@ Pure functions (or expressions) have no side effects (memory or I/O). This means
 
 Traditional Imperative Loop:
 
-```
+```js
 const numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let result = 0;
 for (let i = 0; i < numList.length; i++) {
@@ -36,10 +36,9 @@ for (let i = 0; i < numList.length; i++) {
 
 Functional Programming with higher-order functions:
 
-```
+```js
 const result = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-               .filter(n => n % 2 === 0)
-               .map(a => a * 10)
-               .reduce((a, b) => a + b);
-
+  .filter((n) => n % 2 === 0)
+  .map((a) => a * 10)
+  .reduce((a, b) => a + b);
 ```
